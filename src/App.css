@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Poppins",
+    sans-serif !important;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app_dropDown {
+  background-color: white;
+  border-radius: 20px !important;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.app_dropDown > * {
+  border-radius: 20px !important;
+}
+
+.app_left {
+  flex: 0.9;
+  height: 90vh;
+}
+
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app_stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app_information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+.app_information {
+  flex-grow: 1;
+}
+
+.app_right {
+  display: flex;
+  flex-direction: column;
+  /* height: 90vh; */
+  border-radius: 20px !important;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.app_right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app_graph {
+  flex-grow: 1;
+  height: 270px;
+}
+
+@media (max-width: 1250px) {
+  .app_stats .infoBox_total {
+    font-size: small !important;
+  }
+}
+
+@media (max-width: 1180px) {
+  .app_stats .infoBox_total {
+    font-size: smaller !important;
+  }
+
+  .app_headerTitle {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .app_stats .infoBox_total {
+    font-size: x-small !important;
+  }
+
+  .app_headerTitle {
+    /* font-size: 1.5rem; */
+  }
+}
+
+@media (max-width: 1080px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: large !important;
+  }
+  .app_headerTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: large !important;
+  }
+  .app_headerTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: medium !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: medium !important;
+  }
+  .app_headerTitle {
+    font-size: 1.5rem;
+  }
+  .map {
+    height: 350px;
+  }
+}
+
+@media (max-width: 520px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: medium !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: medium !important;
+  }
+  .app_stats .infoBox_cases {
+    font-size: x-large !important;
+  }
+  .app_headerTitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: small !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: small !important;
+  }
+  .app_stats .infoBox_cases {
+    font-size: x-large !important;
+  }
+  .app_headerTitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats .infoBox_total {
+    font-size: smaller !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: smaller !important;
+  }
+  .app_stats .infoBox_cases {
+    font-size: large !important;
+  }
+  .app_headerTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app_stats .MuiCardContent-root {
+    padding: 10px !important;
+  }
+
+  .app_stats .infoBox_total {
+    font-size: x-small !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: x-small !important;
+  }
+  .app_stats .infoBox_cases {
+    font-size: large !important;
+  }
+  .app_headerTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app_stats .MuiCardContent-root {
+    padding: 10px !important;
+  }
+
+  .app_stats .infoBox_total {
+    font-size: xx-small !important;
+  }
+  .app_stats .infoBox_title {
+    font-size: xx-small !important;
+  }
+  .app_stats .infoBox_cases {
+    font-size: medium !important;
+  }
+  .app_headerTitle {
+    font-size: 1.4rem;
+  }
+}
